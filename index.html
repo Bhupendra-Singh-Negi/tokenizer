@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-zinc-500">
+    <main class="container mx-auto p-4 h-fit max-h-full min-w-2xl max-w-5xl">
+        <section class="font-mono text-center bg-gradient-to-r from-indigo-500 to-indigo-400 rounded-t flex flex-col gap-2 p-8 sm:flex-col sm:items-center sm:gap-6 sm:py-4">
+            <h1 class="text-white text-5xl">Tokenizer</h1>
+            <p class="text-sm text-white">
+                This page is designed to help you understand how tokenization works in natural language processing.
+            </p>
+        </section>
+        <section class="flex-wrap p-5 justify-around bg-zinc-200 flex gap-4 items-center">
+            <div class="flex flex-col gap-4">
+                <h3>Text to Token</h3>
+                <textarea id="textEncode" rows="4" cols="50" placeholder="Type your text here..." class="bg-zinc-100 px-3 py-2"></textarea>
+                <button id="encodeButton" class="bg-indigo-500 text-white rounded-md py-1">Encode</button>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h3>Token to Text</h3>
+                <textarea id="textDecode" rows="4" cols="50" placeholder="Type your Number here..." class="bg-zinc-100 px-3 py-2"></textarea>
+                <button id="decodeButton" class="bg-indigo-500 text-white rounded-md py-1">Decode</button>
+            </div>
+        </section>
+        <section class="p-5 bg-zinc-200 rounded-b flex flex-col gap-4">
+            <button id="vocabButton" class="bg-indigo-500 text-white rounded-md py-1 px-4">Show Vocabulary</button>
+            <p id="vocabDisplay" class="font-mono grid grid-cols-4 gap-2 text-sm text-gray-700"></p>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
